@@ -2,10 +2,14 @@
     width: 100%;
 }
 
-.fileView__row{
+.fileView__header{
     height: 250px;
     display: flex;
     align-items: center;
+    margin-left: 280px;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    text-align: center;
 }
 
 .fileView__titles{
@@ -20,6 +24,12 @@
 
 .fileView__titles--left{
     flex: 1;
+    margin-left: 30px;
+}
+
+.fileView__titles--middle{
+    margin-right: 600px;
+    font-size: 30px;
 }
 
 .fileView__titles--right{

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme, GlobalStyles } from './pages/Themes';
-import './pages/styles.css';
 import { Link } from "react-router-dom";
+import 'styles/styles.css';
 
 const StyledApp = styled.div`
 

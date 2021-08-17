@@ -9,7 +9,7 @@ import { auth, provider } from "./firebase";
 function UserApp() {
   const [user, setUser] = useState({
     displayName: "Nick Ford",
-    email: "nicholasford0135@gmai.com",
+    email: "nicholasford0135@gmail.com",
     emailVerified: true,
     phoneNumber: null,
     photoURL: "https://lh3.googleusercontent.com/ogw/ADea4I61m90xO57JP6r1Fz5cPlnVi9DrYvL7BulwXE3U=s83-c-mo",

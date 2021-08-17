@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import '../../styles/FilesView.css'
 
 import FileItem from './FileItem'
-import FileCard from './FileCard'
 
 import { db } from '../../firebase'
 
@@ -22,21 +21,23 @@ const FilesView = () => {
 
     return (
         <div className='fileView'>
-            <div className="fileView__row">
-                {
-                    files.slice(0, 5).map(({ id, item }) => (
-                        <FileCard name={item.caption} />
-                    ))
-
-                }
+            <div className="fileView__header">
+               <b>Welcome to the ROV3D data upload site.<br/> 
+               To add a file, click the "+ New" icon in the top left of the window.<br/><br/>
+               If you try to open a file in the recent files section<br/>and you receive an error, it is because<br/>that file has been removed from the database.<br/></b>
             </div>
             <div className="fileView__titles">
                 <div className="fileView__titles--left">
-                    <p>Name</p>
+                    <p>Name:</p>
                 </div>
+
+                <div className="fileView__titles--middle">
+                    Recent File Submissions
+                </div>
+
                 <div className="fileView__titles--right">
-                    <p>Last modified</p>
-                    <p>File size</p>
+                    <p>Last modified:</p>
+                    <p>File size:</p>
                 </div>
             </div>
             {
@@ -48,4 +49,4 @@ const FilesView = () => {
     )
 }
 
-export default FilesView
+export default FilesView;

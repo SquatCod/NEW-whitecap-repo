@@ -1,4 +1,10 @@
 .app__main {
   display: flex;
-  background-color: beige;
+  background-color: rgb(169, 168, 168);
+  justify-content: right;
+  width: 100%;
+}
+
+body {
+  background: rgb(5, 5, 5);
 }

@@ -13,7 +13,7 @@ const index = ({ userPhoto }) => {
         <div className='header'>
             <div className="header__logo">
             <img src={GDriveLogo} alt=""/>
-            <span>ROV Upload Center</span>
+            <span className="header-text">ROV Upload Center</span>
         </div>
             <div className="header__searchContainer">
             <div className="header__searchBar">
